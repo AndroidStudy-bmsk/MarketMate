@@ -1,5 +1,6 @@
 package org.bmsk.marketmate
 
+import android.annotation.SuppressLint
 import androidx.recyclerview.widget.DiffUtil
 import org.bmsk.marketmate.model.ListItem
 
@@ -8,6 +9,7 @@ class DiffCallback<T: ListItem> : DiffUtil.ItemCallback<T>() {
         return oldItem.viewType == newItem.viewType && oldItem.getKey() == newItem.getKey()
     }
 
+    @SuppressLint("DiffUtilEquals")
     override fun areContentsTheSame(oldItem: T, newItem: T): Boolean {
         return oldItem == newItem
     }
