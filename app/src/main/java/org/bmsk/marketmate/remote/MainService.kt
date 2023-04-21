@@ -1,5 +1,6 @@
-package org.bmsk.marketmate.model
+package org.bmsk.marketmate.remote
 
+import org.bmsk.marketmate.model.NetworkResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

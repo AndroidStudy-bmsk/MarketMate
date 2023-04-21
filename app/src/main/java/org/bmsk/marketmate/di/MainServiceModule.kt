@@ -4,7 +4,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import org.bmsk.marketmate.model.MainService
+import org.bmsk.marketmate.remote.MainService
 import retrofit2.Retrofit
 import javax.inject.Singleton
 
